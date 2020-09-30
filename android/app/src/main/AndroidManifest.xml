@@ -1,10 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.quanticuz.tic_tac_toe"
+    package="com.quanticuz.tictactoe"
     tools:ignore="MissingVersion">
+
    <application
-        android:label="Tic Tac Toe"
-        android:icon="@drawable/logo.png">
+       android:icon="@drawable/icon"
+       android:label="Tic Tac Toe"
+       android:roundIcon="@drawable/icon"
+       tools:ignore="MissingClass">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
@@ -12,7 +15,7 @@
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
             android:windowSoftInputMode="adjustResize"
-            tools:ignore="Instantiatable,UnusedAttribute">
+            tools:ignore="Instantiatable,MissingClass,UnusedAttribute">
             <!-- Specifies an Android theme to apply to this Activity as soon as
                  the Android process has started. This theme is visible to the user
                  while the Flutter UI initializes. After that, this theme continues
