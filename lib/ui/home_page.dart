@@ -61,7 +61,7 @@ class _HomePageState extends State<HomePage> {
           Expanded(
             flex: 3,
             child: Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.symmetric(vertical:8.0),
               child: GridView.builder(
                 itemCount: 9,
                 gridDelegate:
