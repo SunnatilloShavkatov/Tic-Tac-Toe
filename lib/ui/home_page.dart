@@ -60,29 +60,32 @@ class _HomePageState extends State<HomePage> {
           ),
           Expanded(
             flex: 3,
-            child: GridView.builder(
-              itemCount: 9,
-              gridDelegate:
-                  SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
-              itemBuilder: (BuildContext context, int index) {
-                return GestureDetector(
-                  onTap: () => _tapped(index),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      border: Border.all(color: Colors.grey[700]),
-                    ),
-                    child: Center(
-                      child: Text(
-                        displayExOh[index],
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 40,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: GridView.builder(
+                itemCount: 9,
+                gridDelegate:
+                    SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+                itemBuilder: (BuildContext context, int index) {
+                  return GestureDetector(
+                    onTap: () => _tapped(index),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.grey[700]),
+                      ),
+                      child: Center(
+                        child: Text(
+                          displayExOh[index],
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 40,
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                );
-              },
+                  );
+                },
+              ),
             ),
           ),
           Expanded(
